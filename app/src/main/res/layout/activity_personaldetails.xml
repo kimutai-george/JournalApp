@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".Personaldetails">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimage"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="3dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="50dp"
+
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <EditText
+        android:id="@+id/txtfullnames"
+        android:hint="Enter Your Full Names"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/name"
+        android:background="@drawable/inputstyle"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/profileimage"/>
+    <EditText
+        android:id="@+id/txtusername"
+        android:hint="Create Your Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/name"
+        android:background="@drawable/inputstyle"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/txtfullnames"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <EditText
+        android:id="@+id/txtcountry"
+        android:hint="Your Country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inputstyle"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/country"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/txtusername"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+        <EditText
+            android:id="@+id/txtphonenumber"
+            android:hint="Enter Your Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputstyle"
+            android:textSize="22sp"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/country"
+            android:fontFamily="sans-serif"
+            app:layout_constraintTop_toBottomOf="@+id/txtcountry"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:id="@+id/txtgender"
+            android:hint="Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/inputstyle"
+            android:textSize="22sp"
+            android:drawableLeft="@drawable/country"
+            android:fontFamily="sans-serif"
+            app:layout_constraintTop_toBottomOf="@+id/txtphonenumber"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+
+        <Button
+            android:id="@+id/btnsave"
+            android:text="Save"
+            android:background="@drawable/btnstyle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtgender"/>
+
+        />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
